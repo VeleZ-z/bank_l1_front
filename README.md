@@ -28,7 +28,7 @@ The code is organized to be easy to explain:
 - `src/services`: API communication (`api.ts`, `customerService.ts`, `transactionService.ts`)
 - `src/types`: TypeScript models (`Customer`, `Transaction`)
 
-Main decisions:
+Main decisions(for activity porpuses):
 
 - Use React Router for clear navigation between views.
 - Keep state local with hooks (`useState`, `useEffect`) for simplicity.
