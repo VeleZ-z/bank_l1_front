@@ -1,3 +1,6 @@
+#***Link Informe de laboratorio*** : 
+
+
 # Banking Simulation Frontend
 
 Simple frontend built with React + TypeScript + Vite for university banking simulation task(Designed for a JAVA+Springboot Backend).
