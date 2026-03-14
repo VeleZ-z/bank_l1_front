@@ -1,6 +1,6 @@
 # Banking Simulation Frontend
 
-Simple frontend built with React + TypeScript + Vite for a university banking simulation task.
+Simple frontend built with React + TypeScript + Vite for university banking simulation task(Designed for a JAVA+Springboot Backend).
 
 ## Requirements
 
