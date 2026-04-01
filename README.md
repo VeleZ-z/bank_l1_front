@@ -13,9 +13,15 @@ Simple frontend built with React + TypeScript + Vite for university banking simu
 
 1. Install dependencies:
 	`npm install`
-2. Start development server:
+2. Configure environment variables:
+	Create a `.env` file based on `.env.example` and set `VITE_API_BASE_URL`.
+3. Start development server:
 	`npm run dev`
-3. Open the URL shown by Vite (usually `http://localhost:5173`).
+4. Open the URL shown by Vite in the terminal.
+
+## Environment Variables
+
+- `VITE_API_BASE_URL`: backend API base URL used by the frontend service layer.
 
 ## Build
 

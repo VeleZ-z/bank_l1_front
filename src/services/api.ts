@@ -1,4 +1,10 @@
-const API_BASE = "http://localhost:8080/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+if (!API_BASE_URL) {
+  throw new Error("Missing VITE_API_BASE_URL. Add it to your environment variables.");
+}
+
+const normalizedApiBaseUrl = API_BASE_URL.replace(/\/+$/, "");
 
 type RequestOptions = Omit<RequestInit, "body"> & {
   body?: unknown;
@@ -6,8 +12,9 @@ type RequestOptions = Omit<RequestInit, "body"> & {
 
 export async function request<T>(endpoint: string, options: RequestOptions = {}): Promise<T> {
   const { body, headers, ...rest } = options;
+  const normalizedEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
 
-  const response = await fetch(`${API_BASE}${endpoint}`, {
+  const response = await fetch(`${normalizedApiBaseUrl}${normalizedEndpoint}`, {
     ...rest,
     headers: {
       "Content-Type": "application/json",
