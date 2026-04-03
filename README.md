@@ -59,3 +59,10 @@ Main decisions(for activity porpuses):
 - Searches by account number
 - Fetches `GET /api/transactions/{accountNumber}`
 - Displays formatted transaction history in a table
+
+
+
+## DEPLOY LINKS
+
+### FRONT:https://bank-l1-front.vercel.app
+### BACK:https://lab1p-back.onrender.com/api/customers
